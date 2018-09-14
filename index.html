@@ -1,0 +1,40 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>Kanban</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="entry">
+                <h4>O - To move task</h4><h4>X - To delete task</h4>
+                <h1>Kanban Board</h1>
+                Entry: <input class="textBox" id="input" type="text" placeholder="Enter a task...">
+                <button class="button" id="submit">Submit</button>
+            </div>
+            <div class="container">
+                <div class="tasks">
+                        <h2>To-Do: </h2>
+                        <ul class="list" id="toDo">
+                        </ul>
+                </div>
+                <div class="tasks">
+                    <h2>Doing: </h2>
+                    <ul class="list" id="doing">
+                               
+                    </ul>
+                </div>
+                <div class="tasks" draggable="true" draggable = "true">
+                    <h2>Done: </h2>
+                    <ul class="list" id="done">
+                            
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+    </html>
